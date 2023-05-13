@@ -25,7 +25,6 @@ Get-ChildItem | ForEach-Object {
             Write-Output $_.FullName"不匹配";
         }
     }elseif ($method -eq 2) {
-        # $regex="toby fox - UNDERTALE Soundtrack - ";
         $re=($_.FullName | findstr $regex);
         if($re -ne $null){
             $cto=$change;
